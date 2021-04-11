@@ -1,2 +1,1 @@
-# node
-Ebben a repo-ban lesznek a Node órák anyagai.
+many more happy returns of the day sir
