@@ -1,6 +1,26 @@
 
 const postContainer = document.getElementById('post-container');
 
+fetch('/get_bejegyzesek').then(function(válasz) {
+	válasz.json().then(function(dokumentumok) {
+
+		/* dokumentumok:
+		[
+			{
+				title: 'title',
+				content: 'content'
+			},
+			{
+				title: 'title',
+				content: 'content'
+			}
+		]
+		*/
+
+		dokumentumok.forEach(bejegyzes);
+	});
+});
+
 /*
 <div class="post">
 	<h2 class="post-title">Cím</h2>
